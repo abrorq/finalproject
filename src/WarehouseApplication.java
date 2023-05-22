@@ -18,10 +18,12 @@ class Product {
     }
 
     public String getName() {
+
         return name;
     }
 
     public String getCategory() {
+
         return category;
     }
 
@@ -57,31 +59,33 @@ public class WarehouseApplication {
             choice = scanner.nextLine();
 
             switch (choice) {
-                case "1" -> searchProducts();
-                case "2" -> listAllProducts();
-                case "3" -> System.out.println("Exiting application...");
+                case "1" -> searchProducts1();
+                case "2" -> searchProducts2();
+                case "3" -> listAllProducts();
+                case "4" -> System.out.println("Exiting application...");
                 default -> System.out.println("Invalid choice, please try again.");
             }
             System.out.println();
-        } while (!choice.equals("3"));
+        } while (!choice.equals("4"));
     }
 
     private void displayApplicationInfo() {
         System.out.println("Warehouse Application - BedClothes and Dishes");
-        System.out.println("IT Park University - Version: 1.0, Created on: [05.01.2023]");
-        System.out.println("Developer: [Abrorbek Qodirov], email: [abrorbek_qodirov@student.itpu.uz]");
+        System.out.println("IT Park University - 1.0, Created on: [05.01.2023]");
+        System.out.println("Developer: Abrorbek Qodirov, email: abrorbek_qodirov@student.itpu.uz");
     }
 
     private void displayMenu() {
         System.out.println("Available commands:");
-        System.out.println("1. Search for available products");
-        System.out.println("2. List all products");
-        System.out.println("3. Exit");
+        System.out.println("1. Search for bed clothes");
+        System.out.println("2. Search for dishes");
+        System.out.println("3. List all products");
+        System.out.println("4. Exit");
     }
 
     private void readInventoryFromFile() {
         try {
-            File file = new File("inventory.txt");
+            File file = new File("src/inventory.txt");
             Scanner fileScanner = new Scanner(file);
 
             while (fileScanner.hasNextLine()) {
@@ -97,13 +101,37 @@ public class WarehouseApplication {
                 inventory.add(product);
             }
 
+            System.out.println((long) inventory.size());
+
             fileScanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("Error: Inventory file not found.");
         }
     }
 
-    private void searchProducts() {
+    private void searchProducts1() {
+        System.out.print("Enter search keyword for Bed Clothes: ");
+        String keyword = scanner.nextLine().toLowerCase();
+
+        List<Product> matchingProducts = new ArrayList<>();
+        for (Product product : inventory) {
+            if (product.getName().toLowerCase().contains(keyword) ||
+                    product.getCategory().toLowerCase().contains(keyword)) {
+                matchingProducts.add(product);
+            }
+        }
+
+        if (!matchingProducts.isEmpty()) {
+            System.out.println("Matching products:");
+            for (Product product : matchingProducts) {
+                System.out.println(product);
+            }
+        } else {
+            System.out.println("No products found matching the search criteria.");
+        }
+    }
+
+    private void searchProducts2() {
         System.out.print("Enter search keyword: ");
         String keyword = scanner.nextLine().toLowerCase();
 

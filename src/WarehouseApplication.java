@@ -3,14 +3,14 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 class Product {
-    private final int id;
+    private final String id;
     private final String name;
     private final String category;
     private final double price;
     private final int quantity;
 
     public Product(int id, String name, String category, double price, int quantity) {
-        this.id = id;
+        this.id = String.valueOf(id);
         this.name = name;
         this.category = category;
         this.price = price;
@@ -25,6 +25,11 @@ class Product {
     public String getCategory() {
 
         return category;
+    }
+
+    public String getId() {
+
+        return id;
     }
 
     @Override
@@ -116,7 +121,8 @@ public class WarehouseApplication {
         List<Product> matchingProducts = new ArrayList<>();
         for (Product product : inventory) {
             if (product.getName().toLowerCase().contains(keyword) ||
-                    product.getCategory().toLowerCase().contains(keyword)) {
+                    product.getCategory().toLowerCase().contains(keyword) ||
+                    product.getId().toLowerCase().contains(keyword)) {
                 matchingProducts.add(product);
             }
         }
@@ -132,13 +138,14 @@ public class WarehouseApplication {
     }
 
     private void searchProducts2() {
-        System.out.print("Enter search keyword: ");
+        System.out.print("Enter search keyword for dishes: ");
         String keyword = scanner.nextLine().toLowerCase();
 
         List<Product> matchingProducts = new ArrayList<>();
         for (Product product : inventory) {
             if (product.getName().toLowerCase().contains(keyword) ||
-                    product.getCategory().toLowerCase().contains(keyword)) {
+                    product.getCategory().toLowerCase().contains(keyword) ||
+                    product.getId().toLowerCase().contains(keyword)) {
                 matchingProducts.add(product);
             }
         }

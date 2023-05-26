@@ -1,16 +1,16 @@
-1,Bed Sheet Set,Category1bedclothes,7.00,25
-2,Duvet Cover,Category2bedclothes,15.00,10
-3,Comforter,Category3bedclothes,6.00,12
-4,Pillowcases,Category4bedclothes,19.00,16
-5,Blanket,Category5bedclothes,50.00,32
-6,Mattress Topper,Category6bedclothes,17.00,15
-7,Bed Skirt,Category7bedclothes,90.00,41
-8,Throw Pillow Covers,Category8bedclothes,9.00,6
-9,Dinnerware Set,Category1dishes,8.00,25
-10,Plates,Category2dishes,28.00,45
-11,Bowls,Category3dishes,12.00,90
-12,Mugs,Category4dishes,19.00,52
-13,Glassware Set,Category5dishes,7.00,26
-14,Silverware Set,Category6dishes,45.00,21
-15,Serving Platters,Category7dishes,3.00,10
-16,Salad Bowl,Category8dishes,11.00,38
+1,Bed Sheet Set,bedclothes,7.00,25
+2,Duvet Cover,bedclothes,15.00,10
+3,Comforter,bedclothes,6.00,12
+4,Pillowcases,bedclothes,19.00,16
+5,Blanket,bedclothes,50.00,32
+6,Mattress Topper,bedclothes,17.00,15
+7,Bed Skirt,bedclothes,90.00,41
+8,Throw Pillow Covers,bedclothes,9.00,6
+9,Dinnerware Set,dishes,8.00,25
+10,Plates,dishes,28.00,45
+11,Bowls,dishes,12.00,90
+12,Mugs,dishes,19.00,52
+13,Glassware Set,dishes,7.00,26
+14,Silverware Set,dishes,45.00,21
+15,Serving Platters,dishes,3.00,10
+16,Salad Bowl,dishes,11.00,38

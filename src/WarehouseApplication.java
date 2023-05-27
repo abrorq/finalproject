@@ -32,6 +32,11 @@ class Product {
         return id;
     }
 
+    public double getPrice() {
+
+        return price;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -89,8 +94,12 @@ public class WarehouseApplication {
     }
 
     private void readInventoryFromFile() {
+        readBedClothesInventoryFromFile("bedclothes.csv");
+        readDishesInventoryFromFile("dishes.csv");
+    }
+    private void readBedClothesInventoryFromFile(String fileName) {
         try {
-            File file = new File("src/inventory.txt");
+            File file = new File("src/bedclothes.csv");
             Scanner fileScanner = new Scanner(file);
 
             while (fileScanner.hasNextLine()) {
@@ -106,7 +115,29 @@ public class WarehouseApplication {
                 inventory.add(product);
             }
 
-            System.out.println((long) inventory.size());
+            fileScanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: Inventory file not found.");
+        }
+    }
+
+    private void readDishesInventoryFromFile(String fileName) {
+        try{
+            File file = new File("src/dishes.csv");
+            Scanner fileScanner = new Scanner(file);
+
+            while (fileScanner.hasNextLine()) {
+                String line = fileScanner.nextLine();
+                String[] data = line.split(",");
+                int id = Integer.parseInt(data[0]);
+                String name = data[1];
+                String category = data[2];
+                double price = Double.parseDouble(data[3]);
+                int quantity = Integer.parseInt(data[4]);
+
+                Product product = new Product(id, name, category, price, quantity);
+                inventory.add(product);
+            }
 
             fileScanner.close();
         } catch (FileNotFoundException e) {
@@ -115,17 +146,22 @@ public class WarehouseApplication {
     }
 
     private void searchProducts1() {
-        System.out.print("Enter search keyword for Bed Clothes: ");
+        System.out.print("Enter search keyword for bedclothes: ");
         String keyword = scanner.nextLine().toLowerCase();
+
+        System.out.print("Enter maximum price: ");
+        double maxPrice = scanner.nextDouble();
+        scanner.nextLine();
 
         List<Product> matchingProducts = new ArrayList<>();
         for (Product product : inventory) {
-            if (product.getName().toLowerCase().contains(keyword) ||
-                    product.getCategory().toLowerCase().contains(keyword) ||
-                    product.getId().toLowerCase().contains(keyword)) {
-                matchingProducts.add(product);
+            if (product.getCategory().toLowerCase().contains("bedclothes") &&
+                    product.getName().toLowerCase().contains(keyword) ||
+                    product.getCategory().toLowerCase().contains(keyword))
+                if (product.getPrice() <= maxPrice) {
+                    matchingProducts.add(product);
+                }
             }
-        }
 
         if (!matchingProducts.isEmpty()) {
             System.out.println("Matching products:");
@@ -141,13 +177,18 @@ public class WarehouseApplication {
         System.out.print("Enter search keyword for dishes: ");
         String keyword = scanner.nextLine().toLowerCase();
 
+        System.out.print("Enter max price: ");
+        double maxPrice = scanner.nextDouble();
+        scanner.nextLine();
+
         List<Product> matchingProducts = new ArrayList<>();
         for (Product product : inventory) {
-            if (product.getName().toLowerCase().contains(keyword) ||
-                    product.getCategory().toLowerCase().contains(keyword) ||
-                    product.getId().toLowerCase().contains(keyword)) {
-                matchingProducts.add(product);
-            }
+            if (product.getCategory().toLowerCase().contains("dishes") &&
+                    product.getName().toLowerCase().contains(keyword) ||
+                    product.getCategory().toLowerCase().contains(keyword))
+                if (product.getPrice() <= maxPrice) {
+                    matchingProducts.add(product);
+                }
         }
 
         if (!matchingProducts.isEmpty()) {

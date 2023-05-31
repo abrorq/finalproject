@@ -72,16 +72,17 @@ public class WarehouseApplication {
                 case "1" -> searchProducts1();
                 case "2" -> searchProducts2();
                 case "3" -> listAllProducts();
-                case "4" -> System.out.println("Exiting application...");
+                case "4" -> filtered();
+                case "5" -> System.out.println("Exiting application...");
                 default -> System.out.println("Invalid choice, please try again.");
             }
             System.out.println();
-        } while (!choice.equals("4"));
+        } while (!choice.equals("5"));
     }
 
     private void displayApplicationInfo() {
         System.out.println("Warehouse Application - BedClothes and Dishes");
-        System.out.println("IT Park University - 1.0, Created on: [05.01.2023]");
+        System.out.println("IT Park University - project 1, Created on: [05.01.2023]");
         System.out.println("Developer: Abrorbek Qodirov, email: abrorbek_qodirov@student.itpu.uz");
     }
 
@@ -90,7 +91,8 @@ public class WarehouseApplication {
         System.out.println("1. Search for bed clothes");
         System.out.println("2. Search for dishes");
         System.out.println("3. List all products");
-        System.out.println("4. Exit");
+        System.out.println("4. Filter by the price");
+        System.out.println("5. Exit");
     }
 
     private void readInventoryFromFile() {
@@ -149,52 +151,65 @@ public class WarehouseApplication {
         System.out.print("Enter search keyword for Bed Clothes: ");
         String keyword = scanner.nextLine().toLowerCase();
 
-        System.out.print("Enter maximum price: ");
-        double maxPrice = scanner.nextDouble();
-        scanner.nextLine();
 
         List<Product> matchingProducts = new ArrayList<>();
         for (Product product : inventory) {
-            if (product.getCategory().toLowerCase().contains("bedclothes") &&
-                    product.getName().toLowerCase().contains(keyword) &&
-                    product.getPrice() <= maxPrice) {
+            if (product.getCategory().equalsIgnoreCase("bedclothes") &&
+                    (product.getName().toLowerCase().contains(keyword) ||
+                      product.getCategory().toLowerCase().contains(keyword))) {
                 matchingProducts.add(product);
             }
         }
 
-        displaySearchResults(matchingProducts);
+        if (!matchingProducts.isEmpty()) {
+            System.out.println("Matching products:");
+            for (Product product : matchingProducts) {
+                System.out.println(product);
+            }
+        } else {
+            System.out.println("No products found matching the search criteria.");
+        }
     }
 
     private void searchProducts2() {
         System.out.print("Enter search keyword for Dishes: ");
         String keyword = scanner.nextLine().toLowerCase();
 
-        System.out.print("Enter maximum price: ");
+        List<Product> matchingProducts = new ArrayList<>();
+        for (Product product : inventory) {
+            if (product.getCategory().equalsIgnoreCase("dishes") &&
+                    (product.getName().toLowerCase().contains(keyword) ||
+                            product.getCategory().toLowerCase().contains(keyword))) {
+                matchingProducts.add(product);
+            }
+        }
+
+        if (!matchingProducts.isEmpty()) {
+            System.out.println("Matching products:");
+            for (Product product : matchingProducts) {
+                System.out.println(product);
+            }
+        } else {
+            System.out.println("No products found matching the search criteria.");
+        }
+    }
+
+    private void filtered() {
+        System.out.print("Enter the minimum price: ");
+        double minPrice = scanner.nextDouble();
+
+        System.out.print("Enter the maximum price: ");
         double maxPrice = scanner.nextDouble();
         scanner.nextLine();
 
         List<Product> matchingProducts = new ArrayList<>();
         for (Product product : inventory) {
-            if (product.getCategory().toLowerCase().contains("dishes") &&
-                    product.getName().toLowerCase().contains(keyword) &&
-                    product.getPrice() <= maxPrice) {
+            if (product.getPrice() >= minPrice && product.getPrice() <= maxPrice) {
                 matchingProducts.add(product);
             }
         }
 
         displaySearchResults(matchingProducts);
-    }
-
-    private void listAllProducts() {
-        System.out.println("Here is the list of all products: ");
-
-        if (!inventory.isEmpty()) {
-            for (Product product : inventory) {
-                System.out.println(product);
-            }
-        } else {
-            System.out.println("Inventory is empty.");
-        }
     }
 
     private void displaySearchResults(List<Product> products) {
@@ -206,6 +221,18 @@ public class WarehouseApplication {
             }
         } else {
             System.out.println("No products found matching the search criteria.");
+        }
+    }
+
+    private void listAllProducts() {
+        System.out.println("Here is the list of all products: ");
+
+        if (!inventory.isEmpty()) {
+            for (Product product : inventory) {
+                System.out.println(product);
+            }
+        } else {
+            System.out.println("Inventory is empty.");
         }
     }
 

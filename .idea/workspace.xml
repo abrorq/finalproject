@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77a44e1f-0129-49fd-b267-12564633a1e0" name="Changes" comment="9">
+    <list default="true" id="77a44e1f-0129-49fd-b267-12564633a1e0" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WarehouseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WarehouseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bedclothes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/bedclothes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685145682307</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=".">
+      <created>1685148058672</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685148058672</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -125,6 +141,7 @@
     <MESSAGE value="a" />
     <MESSAGE value="9.40" />
     <MESSAGE value="9" />
-    <option name="LAST_COMMIT_MESSAGE" value="9" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

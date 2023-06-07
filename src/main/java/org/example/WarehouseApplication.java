@@ -1,3 +1,5 @@
+package org.example;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -92,12 +94,12 @@ public class WarehouseApplication {
     }
 
     private void readInventoryFromFile() {
-        readBedClothesInventoryFromFile("bedclothes.csv");
-        readDishesInventoryFromFile("dishes.csv");
+        readBedClothesInventoryFromFile();
+        readDishesInventoryFromFile();
     }
-    private void readBedClothesInventoryFromFile(String fileName) {
+    private void readBedClothesInventoryFromFile() {
         try {
-            File file = new File("src/bedclothes.csv");
+            File file = new File("src/main/resources/bedclothes.csv");
             Scanner fileScanner = new Scanner(file);
 
             while (fileScanner.hasNextLine()) {
@@ -119,9 +121,9 @@ public class WarehouseApplication {
         }
     }
 
-    private void readDishesInventoryFromFile(String fileName) {
+    private void readDishesInventoryFromFile() {
         try{
-            File file = new File("src/dishes.csv");
+            File file = new File("src/main/resources/dishes.csv");
             Scanner fileScanner = new Scanner(file);
 
             while (fileScanner.hasNextLine()) {

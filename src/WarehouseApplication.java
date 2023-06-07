@@ -27,10 +27,6 @@ class Product {
         return category;
     }
 
-    public String getId() {
-
-        return id;
-    }
 
     public double getPrice() {
 

@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77a44e1f-0129-49fd-b267-12564633a1e0" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/daoimplementation/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/WarehouseApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/WarehouseApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
       <recent name="C:\Users\Ahror\IdeaProjects\bedclothes and dishes java project\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.WarehouseApplication">
+  <component name="RunManager" selected="JUnit.WarehouseApplicationUnitTest">
     <configuration name="WarehouseApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WarehouseApplication" />
       <module name="cccc" />
@@ -152,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example.WarehouseApplication" />
         <item itemvalue="JUnit.WarehouseApplicationUnitTest" />
+        <item itemvalue="Application.org.example.WarehouseApplication" />
         <item itemvalue="JUnit.WarehouseApplicationUnitTest.testReadBedClothesInventoryFromFile" />
         <item itemvalue="JUnit.WarehouseApplicationUnitTest.testListAllProducts_EmptyInventory" />
         <item itemvalue="JUnit.WarehouseApplicationUnitTest.testSearchProducts1_MatchingProducts" />
@@ -246,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686282280304</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=".">
+      <created>1686303912468</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686303912468</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

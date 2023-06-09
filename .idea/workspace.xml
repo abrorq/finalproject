@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77a44e1f-0129-49fd-b267-12564633a1e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="77a44e1f-0129-49fd-b267-12564633a1e0" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/WarehouseApplication2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WarehouseApplicationUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WarehouseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bedclothes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bedclothes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dishes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/WarehouseApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/WarehouseApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +29,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -57,11 +55,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Ahror/IdeaProjects/bedclothes and dishes java project",
     "onboarding.tips.debug.path": "C:/Users/Ahror/IdeaProjects/bedclothes and dishes java project/src/Main.java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.controllers" />
       <recent name="DAO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -74,7 +76,7 @@
       <recent name="C:\Users\Ahror\IdeaProjects\bedclothes and dishes java project\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.WarehouseApplicationUnitTest">
     <configuration name="WarehouseApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WarehouseApplication" />
       <module name="cccc" />
@@ -82,6 +84,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WarehouseApplicationUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cccc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WarehouseApplicationUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarehouseApplicationUnitTest.testListAllProducts_EmptyInventory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cccc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WarehouseApplicationUnitTest" />
+      <option name="METHOD_NAME" value="testListAllProducts_EmptyInventory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarehouseApplicationUnitTest.testReadBedClothesInventoryFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cccc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WarehouseApplicationUnitTest" />
+      <option name="METHOD_NAME" value="testReadBedClothesInventoryFromFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarehouseApplicationUnitTest.testSearchProducts1_MatchingProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cccc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WarehouseApplicationUnitTest" />
+      <option name="METHOD_NAME" value="testSearchProducts1_MatchingProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WarehouseApplicationUnitTest" />
+        <item itemvalue="JUnit.WarehouseApplicationUnitTest.testReadBedClothesInventoryFromFile" />
+        <item itemvalue="JUnit.WarehouseApplicationUnitTest.testListAllProducts_EmptyInventory" />
+        <item itemvalue="JUnit.WarehouseApplicationUnitTest.testSearchProducts1_MatchingProducts" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -148,7 +197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686110040267</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=".">
+      <created>1686122183798</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686122183798</updated>
+    </task>
+    <task id="LOCAL-00010" summary=".">
+      <created>1686122218876</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686122218876</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -179,5 +242,16 @@
     <MESSAGE value="9" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

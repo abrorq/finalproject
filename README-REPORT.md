@@ -1,4 +1,4 @@
-# finalproject
+# finalproject-report
 
 | WEEKS          | PROGRESS and CHANGES |
 | -------------- | --------------       |
@@ -12,6 +12,8 @@
 | Week 8 (May 20 - May 26)          | Studying and finding minor issues that should be sorted out and fixed in controllers       |
 | Week 9 (May 27 - June 2 )          | In progress, no change  |
 | Week 10 (June 3 - June 9)          | recording a video presention for my code, creating a report and submitting my repo to the platform      |
+
+
 
 # Warehouse Application Report
 

@@ -2,11 +2,16 @@
 
 | WEEKS          | PROGRESS and CHANGES |
 | -------------- | --------------       |
-| Week 1 (May 15)| Working on Entites and structuring the code   |
-| Week 2         | Working creating csv file and try to figure out how to solve the issues of searching command  | 
-| Week 3         | Trying to solve bugs on searching and DAO            |
-| Week 4         | Working on the efficiency of my code results, working on price filters and controllers/services      |
-| Week 5         | Building unit test        |
+| Week 1 (April 1-7)| Working on Entites and structuring the code   |
+| Week 2 (April 8 - 14)       | Creating csv file and try to figure out how to solve the issues of searching command  | 
+| Week 3 (April 15 - 21)        | Trying to solve bugs on searching and DAO, created a GIT repostiory            |
+| Week 4 (April 22 - 28)          | Working on the efficiency of my code results, working on price filters and controllers/services      |
+| Week 5 (April 29 - May 5)          | Building unit test       |
+| Week 6 (May 6 - May 12)          | Analyzing tests and working on bugs      |
+| Week 7 (May 13 - May 19)          | Working on price filter, adding MIN and MAX options (minimum and maximum)   |
+| Week 8 (May 20 - May 26)          | Studying and finding minor issues that should be sorted out and fixed in controllers       |
+| Week 9 (May 27 - June 2 )          | In progress, no change  |
+| Week 10 (June 3 - June 9)          | recording a video presention for my code, creating a report and submitting my repo to the platform      |
 
 
 

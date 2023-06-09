@@ -1,4 +1,15 @@
-# finalproject
+# finalproject-report
+
+| WEEKS          | PROGRESS and CHANGES |
+| -------------- | --------------       |
+| Week 1 (May 15)| Working on Entites and structuring the code   |
+| Week 2         | Working creating csv file and try to figure out how to solve the issues of searching command  | 
+| Week 3         | Trying to solve bugs on searching and DAO            |
+| Week 4         | Working on the efficiency of my code results, working on price filters and controllers/services      |
+| Week 5         | Building unit test        |
+
+
+
 # Warehouse Application Report
 
 This report provides an overview of the Warehouse Application project, which is focused on managing and searching for products in a warehouse. The project consists of a Java application that allows users to interact with the inventory and perform various operations.

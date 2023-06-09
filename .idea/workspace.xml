@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77a44e1f-0129-49fd-b267-12564633a1e0" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/WarehouseApplication2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WarehouseApplicationUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/daoimplementation/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/WarehouseApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/WarehouseApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +30,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5c704765-db0b-4cd3-976e-d8e2065627c7" />
+        <option name="url" value="https://github.com/abrorq/finalproject.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,10 +90,23 @@
       <recent name="C:\Users\Ahror\IdeaProjects\bedclothes and dishes java project\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WarehouseApplicationUnitTest">
+  <component name="RunManager" selected="Application.org.example.WarehouseApplication">
     <configuration name="WarehouseApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WarehouseApplication" />
       <module name="cccc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.WarehouseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.WarehouseApplication" />
+      <module name="cccc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.dao.daoimplementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,6 +152,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.WarehouseApplication" />
         <item itemvalue="JUnit.WarehouseApplicationUnitTest" />
         <item itemvalue="JUnit.WarehouseApplicationUnitTest.testReadBedClothesInventoryFromFile" />
         <item itemvalue="JUnit.WarehouseApplicationUnitTest.testListAllProducts_EmptyInventory" />
@@ -211,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686122218876</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".">
+      <created>1686282280304</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686282280304</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -242,16 +277,5 @@
     <MESSAGE value="9" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/WarehouseApplication.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
